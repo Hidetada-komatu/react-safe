@@ -3,16 +3,21 @@
 import React from 'react';
 import FriendList from './FriendListComponent';
 import Header from '../public/HeaderComponent';
+import Footer from '../public/FooterComponent';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 require('styles/friend/FriendPage.css');
 
 class FriendPageComponent extends React.Component {
   render() {
     return (
-      <div className="friendpage-component">
-        <Header/>
-        <FriendList/>
-      </div>
+      <MuiThemeProvider>
+        <div className="friendpage-component">
+          <Header/>
+          <FriendList/>
+          <Footer/>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }

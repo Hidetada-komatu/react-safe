@@ -1,15 +1,23 @@
 'use strict';
 
 import React from 'react';
+import MessageList from './MessageListComponent';
+import Header from '../public/HeaderComponent';
+import Footer from '../public/FooterComponent';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 require('styles/message/MessagePage.css');
 
 class MessagePageComponent extends React.Component {
   render() {
     return (
-      <div className="messagepage-component">
-        Please edit src/components/message//MessagePageComponent.js to update this component!
-      </div>
+      <MuiThemeProvider>
+        <div className="messagepage-component">
+          <Header/>
+          <MessageList/>
+          <Footer/>
+        </div>
+      </MuiThemeProvider>
     );
   }
 }

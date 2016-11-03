@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import MessageItem from './MessageItemComponent';
 
 require('styles/message/MessageList.css');
 
@@ -8,7 +9,18 @@ class MessageListComponent extends React.Component {
   render() {
     return (
       <div className="messagelist-component">
-        Please edit src/components/message//MessageListComponent.js to update this component!
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
+        <MessageItem/>
       </div>
     );
   }
