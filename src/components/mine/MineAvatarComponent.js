@@ -12,9 +12,9 @@ class MineAvatarComponent extends React.Component {
       <div className="mineavatar-component">
         <Card>
           <CardHeader
-            title="小明"
+            title="jsceoz"
             subtitle="武汉大学"
-            avatar="l.jpg"
+            avatar="images/yeoman.png"
           />
         </Card>
       </div>

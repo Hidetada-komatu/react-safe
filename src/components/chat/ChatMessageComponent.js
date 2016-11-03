@@ -1,14 +1,26 @@
 'use strict';
 
 import React from 'react';
+import Chip from 'material-ui/Chip';
+import Avatar from 'material-ui/Avatar';
 
 require('styles/chat/ChatMessage.css');
 
+
 class ChatMessageComponent extends React.Component {
+
+  getIsLeft = () => {
+    return this.props.isLeft ? 'chipl' : 'chipr';
+  };
+
   render() {
     return (
-      <div className="chatmessage-component">
-        Please edit src/components/chat//ChatMessageComponent.js to update this component!
+      <div>
+        <Chip
+          className={this.getIsLeft()}
+        >
+          {this.props.content}
+        </Chip>
       </div>
     );
   }

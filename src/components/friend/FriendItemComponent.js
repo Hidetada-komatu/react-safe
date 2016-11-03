@@ -6,13 +6,19 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 require('styles/friend/FriendItem.css');
 
 class FriendItemComponent extends React.Component {
+
+  handleClick = () => {
+    window.location.href="#/chat/";
+  };
+
   render() {
     return (
       <div className="frienditem-component">
         <Card>
           <CardHeader
-            title="小明"
-            avatar="images/jsa-128.jpg"
+            title={this.props.name}
+            avatar="images/yeoman.png"
+            onClick={this.handleClick}
           />
         </Card>
       </div>

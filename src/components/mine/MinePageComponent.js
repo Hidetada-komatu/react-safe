@@ -10,11 +10,24 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 require('styles/mine/MinePage.css');
 
 class MinePageComponent extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: this.props.name
+    }
+  }
+
+  componentWillMount() {
+    console.log('dasdasdasdas');
+  }
+
   render() {
     return (
         <div className="minepage-component">
           <Header/>
           <MineAvatar/>
+          <h1>{this.props.params.userId}</h1>
           <MineMenu/>
         </div>
     );

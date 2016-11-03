@@ -11,6 +11,7 @@ import Footer from './components/public/FooterComponent';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Tab from './components/map/MapTabComponent';
 import LoginBox from  './components/loginpage/LoginBoxComponent';
+import Chat from './components/chat/ChatPageComponent';
 
 // Render the main component into the dom
 
@@ -24,6 +25,7 @@ ReactDOM.render((
         <Route path="/friend" component={Friend}/>
         <Route path="/message" component={Message}/>
         <Route path="/mine" component={Mine}/>
+        <Route path="/chat" component={Chat}/>
         <Route path="/ttt" component={Tab}/>
 
         </Router>

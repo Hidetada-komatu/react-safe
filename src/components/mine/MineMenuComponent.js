@@ -20,8 +20,10 @@ class MineMenuComponent extends React.Component {
         <Paper style="{style}">
           <Menu>
             <MenuItem primaryText="天气" />
+            <Divider/>
             <MenuItem primaryText="围栏设置" />
             <MenuItem primaryText="报警设置" />
+            <Divider/>
             <MenuItem primaryText="校车预约" />
             <MenuItem primaryText="安全出行" />
           </Menu>

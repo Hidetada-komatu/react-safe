@@ -7,14 +7,20 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 require('styles/message/MessageItem.css');
 
 class MessageItemComponent extends React.Component {
+
+  handleClick = () => {
+    window.location.href="#/chat/";
+  };
+
   render() {
     return (
       <div className="messageitem-component">
         <Card>
           <CardHeader
             title="这是一条消息"
-            subtitle="小漠"
-            avatar="images/jsa-128.jpg"
+            subtitle="Tom"
+            avatar="images/yeoman.png"
+            onClick={this.handleClick}
           />
         </Card>
       </div>
