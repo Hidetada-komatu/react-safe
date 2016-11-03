@@ -12,14 +12,11 @@ require('styles/mine/MinePage.css');
 class MinePageComponent extends React.Component {
   render() {
     return (
-      <MuiThemeProvider>
         <div className="minepage-component">
           <Header/>
           <MineAvatar/>
           <MineMenu/>
-          <Footer/>
         </div>
-      </MuiThemeProvider>
     );
   }
 }

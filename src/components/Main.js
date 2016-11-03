@@ -13,9 +13,7 @@ var AppComponent = React.createClass({
   render() {
     return (
       <div className="sss">
-        <MuiThemeProvider>
          <MapPage/>
-        </MuiThemeProvider>
        </div>
     );
   }

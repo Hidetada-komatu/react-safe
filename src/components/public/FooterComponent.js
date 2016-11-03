@@ -29,7 +29,7 @@ class BottomNavigationExampleSimple extends Component {
     switch(index)
     {
       case 0:
-        window.location.href="#/";
+        window.location.href="#/map";
         break;
       case 1:
         window.location.href="#/message/";

@@ -10,16 +10,17 @@ import Header from './components/public/HeaderComponent';
 import Footer from './components/public/FooterComponent';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Tab from './components/map/MapTabComponent';
+import LoginBox from  './components/loginpage/LoginBoxComponent';
 
 // Render the main component into the dom
 
 ReactDOM.render((
   <MuiThemeProvider>
     <div>
-      <Header/>
         <Router history={hashHistory}>
 
-        <Route path="/" component={App}/>
+        <Route path="/" component={LoginBox}/>
+        <Route path="/map" component={App}/>
         <Route path="/friend" component={Friend}/>
         <Route path="/message" component={Message}/>
         <Route path="/mine" component={Mine}/>

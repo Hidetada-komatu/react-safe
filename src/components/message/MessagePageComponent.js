@@ -11,13 +11,10 @@ require('styles/message/MessagePage.css');
 class MessagePageComponent extends React.Component {
   render() {
     return (
-      <MuiThemeProvider>
         <div className="messagepage-component">
           <Header/>
           <MessageList/>
-          <Footer/>
         </div>
-      </MuiThemeProvider>
     );
   }
 }

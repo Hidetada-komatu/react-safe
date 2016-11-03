@@ -11,13 +11,10 @@ require('styles/friend/FriendPage.css');
 class FriendPageComponent extends React.Component {
   render() {
     return (
-      <MuiThemeProvider>
         <div className="friendpage-component">
           <Header/>
           <FriendList/>
-          <Footer/>
         </div>
-      </MuiThemeProvider>
     );
   }
 }
