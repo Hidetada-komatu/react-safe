@@ -2,18 +2,25 @@
 
 import React from 'react';
 import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
 
 require('styles/chat/ChatAction.css');
 
 const style={
   Text: {
-    width: '100%'
+    width: '200px'
   }
 };
 
 
+
 class ChatActionComponent extends React.Component {
+
+
+  handleClick = () => {
+
+  };
+
   render() {
     return (
       <div className="chataction-component">
@@ -21,8 +28,11 @@ class ChatActionComponent extends React.Component {
           style={style.Text}
           hintText="输入内容"
         />
-        <RaisedButton label="发送" primary={true}/>
-        <RaisedButton label="共享位置" secondary={true} />
+        <FlatButton
+          label="发送"
+          primary={true}
+          onClick={this.handleClick}
+        />
       </div>
     );
   }

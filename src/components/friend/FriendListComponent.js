@@ -10,8 +10,6 @@ class FriendListComponent extends React.Component {
     return (
       <div className="friendlist-component">
         <FriendItem name="Tom"/>
-        <FriendItem name="Mike"/>
-        <FriendItem name="John"/>
       </div>
     );
   }

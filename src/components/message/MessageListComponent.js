@@ -9,7 +9,9 @@ class MessageListComponent extends React.Component {
   render() {
     return (
       <div className="messagelist-component">
-        <MessageItem/>
+        <MessageItem content="在吗" sender="Tom "/>
+        <MessageItem content="你好" sender="Mike "/>
+        <MessageItem content="你在哪里" sender="Robin"/>
       </div>
     );
   }

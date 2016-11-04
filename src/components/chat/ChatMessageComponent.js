@@ -15,12 +15,13 @@ class ChatMessageComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="message-wrapper">
         <Chip
-          className={this.getIsLeft()}
+          className={this.props.align}
         >
           {this.props.content}
         </Chip>
+        <br/>
       </div>
     );
   }

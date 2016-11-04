@@ -29,7 +29,6 @@ ReactDOM.render((
         <Route path="/ttt" component={Tab}/>
 
         </Router>
-      <Footer/>
     </div>
   </MuiThemeProvider>
 ), document.getElementById('app'))

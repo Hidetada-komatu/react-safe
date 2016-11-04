@@ -17,8 +17,8 @@ class MessageItemComponent extends React.Component {
       <div className="messageitem-component">
         <Card>
           <CardHeader
-            title="这是一条消息"
-            subtitle="Tom"
+            title={this.props.content}
+            subtitle={this.props.sender}
             avatar="images/yeoman.png"
             onClick={this.handleClick}
           />
