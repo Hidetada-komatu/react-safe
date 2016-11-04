@@ -12,7 +12,7 @@ class MessagePageComponent extends React.Component {
   render() {
     return (
         <div className="messagepage-component">
-          <Header/>
+          <Header title="消息"/>
           <MessageList/>
         </div>
     );

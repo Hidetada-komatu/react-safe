@@ -12,7 +12,7 @@ class FriendPageComponent extends React.Component {
   render() {
     return (
         <div className="friendpage-component">
-          <Header/>
+          <Header title="好友" />
           <FriendList/>
         </div>
     );
