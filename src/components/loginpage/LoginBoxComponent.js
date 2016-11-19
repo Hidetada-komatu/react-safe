@@ -13,8 +13,8 @@ class LoginBoxComponent extends React.Component {
     super(props);
     this.state = {
       id: '',
-      name: '',
-      password: '',
+      name: '123',
+      password: '123',
       opens: false,
       openf: false
     };
@@ -57,34 +57,34 @@ class LoginBoxComponent extends React.Component {
   };
 
   login = (e) => {
-    var id
-    $.ajax({
-      url : 'http://127.0.0.1:7777/user/?name='+this.state.name+'&password='+this.state.password,
-      type : 'GET',
-      async:false,
-    }).done(function (data) {
-      if(typeof data[0] == "undefined"){
-        id = 0;
-      }
-      else {
-        id = data[0].id;
-      }
-    });
-    this.setState({
-      id: id
-    });
-
-    if(id==0){
-      this.setState({
-        openf: true,
-      });
-    }
-    else {
+    // var id
+    // $.ajax({
+    //   url : 'http://127.0.0.1:7777/user/?name='+this.state.name+'&password='+this.state.password,
+    //   type : 'GET',
+    //   async:false,
+    // }).done(function (data) {
+    //   if(typeof data[0] == "undefined"){
+    //     id = 0;
+    //   }
+    //   else {
+    //     id = data[0].id;
+    //   }
+    // });
+    // this.setState({
+    //   id: id
+    // });
+    //
+    // if(id==0){
+    //   this.setState({
+    //     openf: true,
+    //   });
+    // }
+    // else {
       this.setState({
         opens: true,
       });
-      setTimeout("window.location.href='#/mine/",1000);
-    }
+      setTimeout("toIndex.toIndex()",1000);
+    //}
 
     //setTimeout("window.location.href='#/map/'",1000);
     //window.location.href="#/map/";
