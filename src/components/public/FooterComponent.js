@@ -75,4 +75,9 @@ class BottomNavigationExampleSimple extends Component {
   }
 }
 
+
+// Uncomment properties you need
+// MineMenuComponent.propTypes = {};
+// MineMenuComponent.defaultProps = {};
+
 export default BottomNavigationExampleSimple;
